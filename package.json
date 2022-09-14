@@ -1,0 +1,18 @@
+{
+  "name": "photo-challenge",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/no4any/photo-challenge.git",
+  "author": "Martin Karry <martin@karry.de>",
+  "license": "MIT",
+  "private": true,
+
+  "workspaces": [
+    "packages/*"
+  ],
+
+  "scripts": {
+    "start:ui": "yarn workspace @photo-challenge/ui run start",
+    "build:common": "yarn workspace @photo-challenge/common run build"
+  }
+}
